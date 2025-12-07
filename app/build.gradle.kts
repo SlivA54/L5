@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.roomandcompose"
+    namespace = "com.example.l5"
     compileSdk = 35  // ← Прямое присваивание, НЕ блок!
 
     defaultConfig {
-        applicationId = "com.example.roomandcompose"
+        applicationId = "com.example.l5"
         minSdk = 27
         targetSdk = 35
         versionCode = 1
@@ -70,6 +70,8 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.runtime.livedata)
+    implementation(libs.androidx.benchmark.traceprocessor)
+    implementation(libs.androidx.compose.foundation.layout)
     ksp(libs.androidx.room.compiler)
 
     // ViewModel
